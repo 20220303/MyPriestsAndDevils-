@@ -1,11 +1,11 @@
 public class Test{
 	public int abs（int a,int b）{
-		if(b>a){
-			b=b-a;
+		if(a>b){
+			a=a-b;
 		}else{
-			b=a-b;
+			a=b-a;
 		}
-		return b;
+		return a;
 	}
 }
 
