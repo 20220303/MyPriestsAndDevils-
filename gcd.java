@@ -1,10 +1,10 @@
 public class Test{
 	public int gcd（int a,int b）{
-		while(b!=0){
-			if(a>b){
-				a=a-b;
-			}else{
+		while(a!=0){
+			if(b>a){
 				b=b-a;
+			}else{
+				a=a-b;
 			}
 		}
 	}
