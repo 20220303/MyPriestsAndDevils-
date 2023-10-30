@@ -1,4 +1,5 @@
 public class Test{
+	
 	public int gcd（int a,int b）{
 		while(b!=0){
 			if(a>b){
