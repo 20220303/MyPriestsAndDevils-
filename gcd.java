@@ -12,12 +12,7 @@ public class Test{
 
 
 	public int abs（int a,int b）{
-		if(b>a){
-			b=a-b;
-		}else{
-			b=b-a;
-		}
-		return b;
+		
 	}
 }
 
