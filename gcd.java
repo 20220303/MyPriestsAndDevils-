@@ -1,12 +1,13 @@
 public class Test{
-  	public static int getMax(int[] arr) {
-  		int max = arr[0];
-  		for(int i = 1;i < arr.length; i++) {
-  			if (max < arr[i]) {
-  				max = arr[i];
-  			}
-  		}
-  		return max;
+	public int gcd（int a,int b）{
+		while(b!=0){
+			if(a>b){
+				a=a-b;
+			}else{
+				b=b-a;
+			}
+		}
+		return a;
 	}
 }
 
