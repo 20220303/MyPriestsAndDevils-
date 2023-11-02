@@ -1,10 +1,12 @@
-
-public static int getMax(int[] arr) {
-		int max= arr[0];
-		for(int i = 1;i < arr.length; i++) {
-			if (max < arr[i]) {
-				max= arr[i];
-			}
-		}
-		return max;
-	}
+public void btnSendRequest(ActionEvent actionEvent) {
+    TreeItem<String> selectedItem = (TreeItem<String>) treePaths.getSelectionModel().getSelectedItem();
+    String message = selectedItem.getValue() + " not implemented yet"
+    switch (selectedItem.getValue()) {
+        case "GET":
+            Platform.runLater(() -> getRequest());
+        case "POST":
+            Platform.runLater(() -> postRequest());
+        default:
+            log.error(message);
+    }
+}
