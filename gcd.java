@@ -5,7 +5,7 @@ public class Test{
 			if(a>b){
 				a=a-b;
 			}else{
-				b=b-a;//sssssssssssss
+				b=b-a;
 			}
 		}
 		return a;
